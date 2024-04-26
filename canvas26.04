@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 2px solid rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="800" height="500"></canvas>
+    <script>
+const canvas = document.querySelector('canvas');
+const ctx = canvas.getContext('2d')
+/*ctx.fillStyle = 'FF0000';
+ctx.fillRect(0,0, 100, 100);
+ctx.strokeStyle="Green";
+ctx.strokeRect(120, 10, 100, 200); rysowanie kwadratu i prostokata */
+
+/*ctx.beginPath();
+ctx.lineWidth = 10;
+ctx.strokeStyle = 'blue';
+ctx.moveTo(150,50);
+ctx.lineTo(300,200); //1 kreska
+ctx.lineTo(500,20); //2 kreska
+ctx.closePath(); //domyka kreske
+ctx.stroke(); //narysuj
+ctx.fill(); //wypelnia trojkat */
+
+/* ctx.fillStyle = 'white';
+ctx.fillRect(0,0, 200, 100);
+
+flaga polski
+ctx.fillStyle = 'red';
+ctx.fillRect(0,100, 200, 100);
+ctx.strokeStyle="black";
+ctx.strokeRect(0, 0, 200, 200); */
+        //rysowanie łuku
+       /* ctx.beginPath();
+        ctx.lineWidth = 5;
+        ctx.arc(200, 200, 60, 0, (Math.PI / 180) *300, true);
+        ctx.stroke();
+        //rysowanie koła
+        ctx.beginPath();
+        ctx.lineWidth = 5;
+        ctx.arc(200, 200, 60, 0, (Math.PI / 100) *360, false);
+        ctx.stroke(); */
+
+        //papieros
+        ctx.fillStyle = 'black';
+    ctx.fillRect(250,250, 200, 50);
+
+    ctx.fillStyle = 'black';
+    ctx.fillRect(462,250, 15, 50);
+
+    ctx.fillStyle = 'black';
+    ctx.fillRect(485,250, 15, 50);
+
+    ctx.beginPath();
+        ctx.lineWidth = 5;
+        ctx.arc(460, 230, 60, 0, (Math.PI / 90) *300, true);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.lineWidth = 5;
+        ctx.arc(490, 230, 60, 0, (Math.PI / 90) *300, true);
+        ctx.stroke();
+
+
+
+
+        ctx.beginPath();
+        ctx.lineWidth = 5;
+        ctx.arc(400, 250, 200, 0, (Math.PI / 100) *360, false);
+        ctx.stroke();
+        
+    ctx.lineWidth = 10;
+    ctx.strokeStyle = 'red';
+    ctx.moveTo(569,150);
+    ctx.lineTo(240,370);
+    ctx.stroke();
+
+
+
+    
+
+
+    </script>
+</body>
+</html>
